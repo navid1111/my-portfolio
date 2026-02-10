@@ -2,10 +2,12 @@
  * ProjectsSection Component
  */
 
+import { Link } from 'react-router-dom';
 import { PROJECTS } from '../../constants/portfolio';
 
 const ProjectCard = ({ project }) => {
   return (
+    <Link to={`/project/${project.slug}`} className="block">
     <article className="interactive-card border-2 border-line bg-bg grid grid-cols-[60px_1fr] md:grid-cols-[80px_1fr]">
             <div className="bg-line text-bg flex items-center justify-center py-4">
         <span className="vertical-text font-disp font-black text-2xl md:text-3xl">
@@ -27,17 +29,17 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="flex gap-4">
           {project.links.map((link, index) => (
-            <a
+            <span
               key={index}
-              href={link.href}
               className="font-bold border-b-2 border-line hover:text-line transition-colors"
             >
               {link.text}
-            </a>
+            </span>
           ))}
         </div>
       </div>
     </article>
+    </Link>
   );
 };
 
