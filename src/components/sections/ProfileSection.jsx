@@ -28,17 +28,18 @@ const ProfileSection = () => {
           {/* Avatar Section */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="w-[180px] h-[180px] border-4 border-line relative overflow-hidden bg-accent">
-              <div className="absolute inset-0 flex items-center justify-center text-8xl font-black text-text opacity-20">
-                AV
-              </div>
+              <img
+                src="/avatar.jpg"
+                alt="Navid Kamal"
+                className="absolute inset-0 w-full h-full object-cover object-top"
+              />
               <div className="absolute bottom-0 left-0 right-0 bg-line text-bg text-center py-1 text-xs font-bold font-mono">
                 ID: 449-X2
               </div>
             </div>
             <div className="flex gap-3">
-              <SocialLink icon="ph-github-logo" href="#" />
-              <SocialLink icon="ph-linkedin-logo" href="#" />
-              <SocialLink icon="ph-twitter-logo" href="#" />
+              <SocialLink icon="ph-github-logo" href="https://github.com/navid1111" />
+              <SocialLink icon="ph-linkedin-logo" href="https://linkedin.com/in/navid-kamal" />
             </div>
           </div>
 

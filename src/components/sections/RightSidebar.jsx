@@ -9,7 +9,7 @@ const LocationCard = () => (
   <div className="bordered-box-filled p-6">
     <div className="text-xs tracking-widest font-mono mb-4 opacity-70">LOCATION_DATA</div>
     <div className="font-disp font-black text-3xl leading-none mb-4">
-      NYC<br />40.7128° N<br />74.0060° W
+      DHK<br />23.8103° N<br />90.4125° E
     </div>
     <div className="w-full h-32 bg-bg opacity-50 relative overflow-hidden border border-text">
       <div className="absolute inset-0 grid grid-cols-4 grid-rows-4">
@@ -50,10 +50,10 @@ const ContactCard = () => (
 
       <div className="text-xs tracking-widest font-mono mb-4 opacity-70">INQUIRIES</div>
       <a
-        href="mailto:hello@void.dev"
+        href="mailto:navidkamal@iut-dhaka.edu"
         className="block font-disp font-black text-2xl border-b-2 border-line hover:text-line transition-colors leading-none pb-1"
       >
-        HELLO@<br />VOID.DEV
+        NAVIDKAMAL@<br />IUT-DHAKA.EDU
       </a>
     </div>
 
